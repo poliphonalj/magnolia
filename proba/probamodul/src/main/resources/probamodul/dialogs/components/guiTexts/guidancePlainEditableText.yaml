@@ -1,0 +1,20 @@
+form:
+  properties: 
+    author:
+      $type: textField
+      required: true
+      description: author name should be given here!
+      
+    date:
+      label: date
+      $type: dateField
+      type: java.util.Date
+      time: true
+      
+    text:
+      label: text
+      height: 300
+      $type: richTextField
+      configJsFile: /.webresources/ckeditor/config-magnolia-extended.js
+      required: true
+      defaultValue: ur text comes here!

@@ -1,0 +1,391 @@
+shownews:   selectbol tudja kiv�lasztani a hirek mennyiseget
+shownews2:  beviteli mezokbol tudja beadni a megjelenitendo hirek mennyiseget, validalva van, csak szamokra, 5 nel kisebb szamokra.
+			ha nincs annyi hir a db-ben mint amit ker, akkor az osszeset de max 3 at ki!
+shownewsAll: kiadja az �sszes hirt, a sz�r�nek mgfelelve,cs�kken�, n�vekv� sorrendben
+shownewsFilter, nincs ftl-je csak tesztre szolgal a konzolbol
+paginatedNews: egy linkkel kuldenek egy getrequestet a servernek amit egy rest vegpont elkap, az url parambol kiolvassa a megfelelo
+			erteket, ezt visszakuldi a model segitselgevel a searchfn -nek az ftl be
+			
+			paginalast hasznalja a searchfn csak a link szamat nem tudom atadni
+			rest v vaadin?????
+
+van egy app amivel hireket tehetek a jcr ba
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+form:
+  label: chartjs
+  tabs:
+    - name: tabMain
+      label: Main
+      fields:
+
+        - name: title
+          class: info.magnolia.ui.form.field.definition.TextFieldDefinition
+          label: Title
+
+        - name: chartType
+          class: info.magnolia.ui.form.field.definition.SelectFieldDefinition
+          label: Type
+          options:
+            - name: bar
+              value: bar
+              label: Bar
+            - name: line
+              value: line
+              label: Line
+            - name: radar
+              value: radar
+              label: Radar
+            - name: polarArea
+              value: polarArea
+              label: Polar Area
+
+        - name: data
+          description: Enter data formatted as JSON valid for chart.js library.
+          class: info.magnolia.ui.form.field.definition.CodeFieldDefinition
+          rows: 8
+          label: Data - chartjs format
+
+    - name: tabHTML
+      label: HTML
+      fields:
+
+        - name: componentId
+          class: info.magnolia.ui.form.field.definition.TextFieldDefinition
+          label: ID of component
+
+        - name: image
+          class: info.magnolia.ui.form.field.definition.LinkFieldDefinition
+          label: egy kepet ide
+          targetWorkspace: dam
+          appName: assets
+          identifierToPathConverter:
+            class: info.magnolia.dam.app.assets.field.translator.AssetCompositeIdKeyTranslator
+          contentPreviewDefinition:
+            contentPreviewClass: info.magnolia.dam.app.ui.field.DamFilePreviewComponent
+
+
+actions:
+  commit:
+    class: info.magnolia.ui.admincentral.dialog.action.SaveDialogActionDefinition
+  cancel:
+    class: info.magnolia.ui.admincentral.dialog.action.CancelDialogActionDefinition
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    # Automatically generated dialog with few most often used fileds (text, right, link, DAM image, multivalue, link to app, select). Feel free to modify them for your specific component.
+
+form:
+  label: card
+  tabs:
+    - name: tabMain
+      label: Main
+      fields:
+
+        - name: title
+          class: info.magnolia.ui.form.field.definition.TextFieldDefinition
+          label: Title
+
+        - name: image
+          class: info.magnolia.ui.form.field.definition.LinkFieldDefinition
+          targetWorkspace: dam
+          appName: assets
+          label: Image
+          identifierToPathConverter:
+            class: info.magnolia.dam.app.assets.field.translator.AssetCompositeIdKeyTranslator
+          contentPreviewDefinition:
+            contentPreviewClass: info.magnolia.dam.app.ui.field.DamFilePreviewComponent
+
+        - name: caption
+          class: info.magnolia.ui.form.field.definition.TextFieldDefinition
+          label: Image Caption
+
+        - name: desc
+          class: info.magnolia.ui.form.field.definition.RichTextFieldDefinition
+          label: Description
+
+        - name: internalLink
+          class: info.magnolia.ui.form.field.definition.LinkFieldDefinition
+          targetWorkspace: website
+          appName: pages
+          label: Select page
+          identifierToPathConverter:
+            class: info.magnolia.ui.form.field.converter.BaseIdentifierToPathConverter
+
+        - name: categories
+          class: info.magnolia.ui.form.field.definition.MultiValueFieldDefinition
+          label: Select category
+          field:
+            name: linkField
+            class: info.magnolia.ui.form.field.definition.LinkFieldDefinition
+            targetWorkspace: category
+            appName: categories
+            identifierToPathConverter:
+              class: info.magnolia.ui.form.field.converter.BaseIdentifierToPathConverter
+
+        - name: option
+          class: info.magnolia.ui.form.field.definition.SelectFieldDefinition
+          label: Option
+          options:
+            - label: A
+              value: a
+            - label: B
+              value: b
+
+actions:
+  commit:
+    class: info.magnolia.ui.admincentral.dialog.action.SaveDialogActionDefinition
+  cancel:
+    class: info.magnolia.ui.admincentral.dialog.action.CancelDialogActionDefinition
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    tabs:
+    - name: tabLink
+      label: Link
+      fields:
+        - name: filt
+          fieldType: select
+          label: mi alapj�n jelenitsuk meg a hireket?
+          options:
+            - name: one
+              value: 1
+              selected: true
+              label: datum
+
+            - name: auth
+              value: 2
+              label: author (abc)
+            
+        
+
+          radioGroup:
+            $type: radioButtonGroupField
+            datasource:
+              $type: optionListDatasource
+              options:
+              - name: cs�kken�
+                value: cs
+              - name: n�vekv�
+                value: n
+    
+    
+    
+    
+    
+    form:
+      properties:
+        radioGroup:
+          $type: radioButtonGroupField
+          datasource:
+           $type: optionListDatasource
+           options:
+           - name: cs�kken�
+             value: cs
+           - name: n�vekv�
+             value: n
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             [#assign pnum=p?number]
+	[#assign searchResults = searchfn.searchContent('news-app', '*', '/', 'lib:actualNews',2,2) /] 
+	
+		[#if searchResults?has_content]
+    	[#list searchResults as item]
+        	[#if item.text??]
+            	<div class="found-component">
+            		${item.text}
+            	</div>
+        	[/#if]
+    	[/#list]
+		[/#if]
+             
+             
+             
+             
+             
+             
+             
+             
+             
+          [#list childrenNodeList as childNode]
+ 	[#assign peaceOfNews = cmsfn.contentByPath("/"+childNode.name, "news-app")]	
+ 	${peaceOfNews.author}
+ 	[/#list]   
+             
+             
+             
+
+
+
+
+
+  
+		[#assign searchResults = searchfn.searchContent('news-app', '*', '/', 'lib:actualNews',2,2) /] 
+			<a href=${searchResults[0].intro}>page</a>
+
+
+
+
+
+
+
+
+	[#if numOfPages<=6]   
+		<a href="?page=1">  elso  </a>
+		[#list 1..numOfPages as i]
+			<a href="?page=${i}">  ${i}  </a>
+		[/#list]
+		<a href="?page=${numOfPages}">  utolso  </a>
+	[/#if]
+
+
+
+
+
+
+
+
+
+
+
+
+public void createPagerList(String actual, int lenghtOfResults){				//itt lesz a logika ami legyártja az aktuális pagerListet az actualPosition alapjan
+		int actualPos=Integer.parseInt(actual);
+		if(lengthOfResults%2==0){
+			lengthOfPages=lenghtOfResults/2;
+		}
+		else{
+			lengthOfPages=(lenghtOfResults/2)+1;
+		}
+		
+		if(lengthOfPages <= 5){													//ha 5 oldalnal kevesebb van akkor minden link megjelenik elso es utolso nelkul
+			for(int i=1;i<=lengthOfPages;i++){
+				pagerList.add(i+"");
+			}
+		}
+		
+		
+		pagerList.remove(actualPos-1);
+		pagerList.add(actualPos-1, "<"+actual+">");
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+public void createPagerList(String actual, int lenghtOfResults){				//itt lesz a logika ami legyártja az aktuális pagerListet az actualPosition alapjan
+		int actualPos=Integer.parseInt(actual);
+		if(lengthOfResults%2==0){
+			lengthOfPages=lenghtOfResults/2;
+		}
+		else{
+			lengthOfPages=(lenghtOfResults/2)+1;
+		}
+		
+		if(lengthOfPages <= 5){													//ha 5 oldalnal kevesebb van akkor minden link megjelenik elso es utolso nelkul
+			for(int i=1;i<=lengthOfPages;i++){
+				pagerList.add(i+"");
+			}
+		}
+		
+		
+		pagerList.remove(actualPos-1);
+		pagerList.add(actualPos-1, "<"+actual+">");
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[@greet person=i/]
+ 
+ [#macro greet person]
+  Hello ${person}!
+[/#macro]
+    

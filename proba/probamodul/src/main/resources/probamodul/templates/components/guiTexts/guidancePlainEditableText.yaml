@@ -1,0 +1,5 @@
+title: guidance-plain textEditor
+renderType: freemarker
+templateScript: /probamodul/templates/components/guiTexts/guidancePlainEditableText.ftl
+dialog: probamodul:components/guiTexts/guidancePlainEditableText
+visible: true

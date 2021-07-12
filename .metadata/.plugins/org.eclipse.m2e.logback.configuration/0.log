@@ -1,0 +1,18 @@
+2021-07-12 23:12:14,639 [Worker-3: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2021-07-12 23:13:00,208 [Worker-27: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using NULL lifecycle mapping for MavenProject: gui.guidance:proba:1.0-SNAPSHOT @ C:\javaproba\proba\pom.xml.
+2021-07-12 23:13:00,568 [Worker-23: Updating Maven Dependencies] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using NULL lifecycle mapping for MavenProject: gui.guidance:proba:1.0-SNAPSHOT @ C:\javaproba\proba\pom.xml.
+2021-07-12 23:20:46,414 [Worker-10: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: gui.guidance:probamodul:1.0-SNAPSHOT @ D:\mentes3\javaproba\proba\probamodul\pom.xml.
+2021-07-12 23:20:46,414 [Worker-14: Updating Maven Dependencies] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: gui.guidance:probamodul:1.0-SNAPSHOT @ D:\mentes3\javaproba\proba\probamodul\pom.xml.
+2021-07-12 23:20:48,136 [Worker-10: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - File encoding has not been set, using platform encoding UTF8, i.e. build is platform dependent!
+2021-07-12 23:20:48,142 [Worker-10: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF8 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-07-12 23:20:48,148 [Worker-10: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 26 resources
+2021-07-12 23:20:48,153 [Worker-10: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-07-12 23:20:48,155 [Worker-10: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF8 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-07-12 23:20:48,156 [Worker-10: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\mentes3\javaproba\proba\probamodul\src\test\resources
+2021-07-12 23:20:50,203 [Worker-6: Updating Maven Dependencies] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: gui.guidance:probamodul:1.0-SNAPSHOT @ D:\mentes3\javaproba\proba\probamodul\pom.xml.
+2021-07-12 23:20:52,825 [Worker-5: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - File encoding has not been set, using platform encoding UTF8, i.e. build is platform dependent!
+2021-07-12 23:20:52,830 [Worker-5: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF8 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-07-12 23:20:52,832 [Worker-5: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-07-12 23:20:52,832 [Worker-5: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-07-12 23:20:52,834 [Worker-5: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF8 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-07-12 23:20:52,834 [Worker-5: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\mentes3\javaproba\proba\probamodul\src\test\resources
