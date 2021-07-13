@@ -1,0 +1,12 @@
+title: referenciak
+templateScript: /probamodul/templates/pages/ReferencePage.ftl
+renderType: freemarker
+dialog: probamodul:pages/ReferencePage
+visible: true
+
+areas:
+  main:
+    type: single
+    availableComponents:
+      Reference-komponens:
+        id: probamodul:components/guiReferencies/ReferenceRenderer

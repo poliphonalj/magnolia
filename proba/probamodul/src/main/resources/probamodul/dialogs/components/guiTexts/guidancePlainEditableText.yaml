@@ -15,6 +15,6 @@ form:
       label: text
       height: 300
       $type: richTextField
-      configJsFile: /.webresources/ckeditor/config-magnolia-extended.js
+                   #configJsFile: /.probamodul/ckeditor/config-magnolia.js
       required: true
       defaultValue: ur text comes here!

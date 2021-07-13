@@ -1,0 +1,44 @@
+#az alternate-card nevű komponensek egy képet tartalmaznak, melyre ha rávisszük az egeret
+#egy szürke mezőben egy szövegre változik. az egész egy link egyben
+
+datasource: 
+  workspace: alternate-card
+  rootPath: /
+  namespaces:
+    lib: https://www.magnolia-travel.com/jcr/1.0/lib
+  autoCreate: true
+
+model: 
+  nodeType: lib:alternateCard
+  properties:
+    - name: image
+      type: asset 
+    
+    - name: textOnCard
+      type: richText
+      description: a kártyára felkerülő szöveg
+
+    - name: text
+      type: richText
+      defaultValue: szoveg
+      required: true
+      description: részletes leírás, a partnerekről.
+
+    - name: focim
+      $type: textField
+      required: true
+      description: a részletes leiras cime, narancssárga szinu nagyobb betűméret  #ez lesz egyben a link is ahova ugorjon
+
+    - name: alcim
+      $type: textField
+      description: a részletes leiras alcime, narancssárga szinu nagyobb betűméret mint a szöveg
+
+    - name: editor
+      defaultValue: editors name
+      required: true
+      description: az editor nevét kell megadni
+
+    - name: publish_date 
+      type: Date
+
+    

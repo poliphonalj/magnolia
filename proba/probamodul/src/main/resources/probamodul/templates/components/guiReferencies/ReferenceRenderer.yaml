@@ -1,0 +1,5 @@
+title: referenciak
+renderType: freemarker
+templateScript: /probamodul/templates/components/guiReferencies/ReferenceRenderer.ftl
+
+visible: true
