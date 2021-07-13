@@ -17,7 +17,7 @@
 		
  		<!--itt kell megjeleníteni a css kartyat-->
  		
- 		<a href="http://www.google.com"> <div id="thediv" />
+ 		<a href="#${focim}"> <div id="thediv" />
  		
  		 	<div id="thediv" class="flip-card">
 				<div class="flip-card-inner">
@@ -40,14 +40,29 @@
 <br>
 <br>
 <br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 
 <div>
 	[#list childNodes as actualReference]
 		[#assign childName2 = "/"+actualReference.name	]
  		[#assign ref2 = cmsfn.contentByPath(childName2, "alternate-card")]	
-		<h1 style="color:Tomato;">${ref2.focim}</h1>
+		<h1 id="${ref2.focim}" style="color:Tomato;">${ref2.focim}</h1>
 		<h2 style="color:Tomato;">${ref2.alcim}</h1>
 		<h3>${ref2.text}</h1><br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
 	<br>
 	[/#list]
 </div>
