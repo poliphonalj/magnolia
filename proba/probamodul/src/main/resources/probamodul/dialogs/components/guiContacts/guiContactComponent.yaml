@@ -1,0 +1,67 @@
+form:
+  tabs:
+    - name: telefon
+      label: telefon
+      fields:
+        - name: telefon1
+          fieldType: text
+          label: telefon 1
+
+        - name: telefon2
+          fieldType: text
+          label: telefon 2
+
+        - name: telefon3
+          fieldType: text
+          label: telefon 3
+
+        - name: telefon4
+          fieldType: text
+          label: telefon 4
+       
+
+    - name: fax
+      label: fax
+      fields: 
+        - name: fax
+          fieldType: text
+          label: fax
+
+#kell majd validalas
+    - name: email
+      label: email
+      fields: 
+        - name: email
+          fieldType: text
+          label: emial
+
+
+    - name: address
+      label: cim
+      fields: 
+        - name: address
+          fieldType: text
+          label: cim
+
+
+    - name: socialmedia1
+      label: facebook
+      fields: 
+        - name: face
+          fieldType: text
+          label: facebook
+
+    - name: socialmedia2
+      label: linkedIn
+      fields: 
+        - name: linkdin
+          fieldType: text
+          label: LinkedIn
+
+
+
+
+
+
+
+  

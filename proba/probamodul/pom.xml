@@ -130,7 +130,23 @@
 			<groupId>info.magnolia.dam</groupId>
 			<artifactId>magnolia-dam-templating</artifactId>
 		</dependency>
+		
+		
+		<dependency>
+			<groupId>info.magnolia.jcrtools</groupId>
+			<artifactId>magnolia-jcr-tools</artifactId>
+		</dependency>
 
+		<!-- https://mvnrepository.com/artifact/info.magnolia.cache/magnolia-cache-app -->
+		<dependency>
+			<groupId>info.magnolia.cache</groupId>
+			<artifactId>magnolia-cache-app</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>info.magnolia.site</groupId>
+			<artifactId>magnolia-site-app</artifactId>
+		</dependency>
 
 </dependencies>
 

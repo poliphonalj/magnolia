@@ -28,3 +28,6 @@ areas:
 
       guidancePlainEditableText:
         id: probamodul:components/guiTexts/guidancePlainEditableText
+
+      guiContactComponent:
+        id: probamodul:components/guiContacts/guiContactComponent

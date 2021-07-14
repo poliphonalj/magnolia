@@ -11,6 +11,11 @@ paginatedNews: egy linkkel kuldenek egy getrequestet a servernek amit egy rest v
 
 van egy app amivel hireket tehetek a jcr ba
 
+referencepage: az osszes referenciat kiteszi a db bol mukodik jol!
+
+
+
+
 
 
 
@@ -372,8 +377,29 @@ public void createPagerList(String actual, int lenghtOfResults){				//itt lesz a
 
 
 
-
-
+form definicio tabokkal
+form:
+  tabs:
+    - name: tabText
+      label: Text
+      fields:
+        - name: title
+          fieldType: text
+          label: Title
+        - name: textEditor
+          fieldType: richText
+          label: Text editor
+    - name: tabImage
+      label: Image
+      fields:
+        - name: image
+          fieldType: link
+          targetWorkspace: dam
+          appName: assets
+          identifierToPathConverter:
+            class: info.magnolia.dam.app.assets.field.translator.AssetCompositeIdKeyTranslator
+          contentPreviewDefinition:
+            contentPreviewClass: info.magnolia.dam.app.ui.field.DamFilePreviewComponent
 
 
 

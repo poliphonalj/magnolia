@@ -1,0 +1,12 @@
+	
+*************************	
+*	gui references:		*
+*************************
+
+az alternate-card app megvalósulása. Lehetővé teszi "card"-ok megjelenítését.
+A felső részén a kártyának a cég logója van, ha rámegyünk az egérrel akkor megfordul és
+egy alapleírást tartalmaz. Az egeész kártya egy link, mely a cég leírásához visz, ahol van egy cím
+és egy alcím és egy szöveg. Az appból lehet felvinni az adatokat és törölni is.
+
+A ReferencePage.ftl template kap egy komponenst, ami automtiusan dialog nélkül megjeleníti a jcr-ból
+a tartalmat. 

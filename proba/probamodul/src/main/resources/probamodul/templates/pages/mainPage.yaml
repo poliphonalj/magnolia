@@ -1,0 +1,21 @@
+title: main-page
+templateScript: /probamodul/templates/pages/mainPage.ftl
+renderType: freemarker
+dialog: probamodul:pages/mainPage
+visible: true
+
+areas:
+  main:
+    type: single
+    availableComponents:
+      Reference-komponens:
+        id: probamodul:components/guiReferencies/ReferenceRenderer
+  footer:
+    type: single
+    availableComponents:
+      kontakt-komponens:
+        id: probamodul:components/guiContacts/ReferenceRenderer
+    inheritance:
+      enabled: true
+      #components: filtered   #csak azokat a komponenseket örökiti ahol az inheritable property true
+      components: all
