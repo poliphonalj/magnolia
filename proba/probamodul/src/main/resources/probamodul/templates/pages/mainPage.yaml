@@ -10,6 +10,9 @@ areas:
     availableComponents:
       Reference-komponens:
         id: probamodul:components/guiReferencies/ReferenceRenderer
+      QR and Logo Component:
+        id: probamodul:components/guiQRandLogo/guiQRandLogoComponent
+
   footer:
     type: single
     availableComponents:

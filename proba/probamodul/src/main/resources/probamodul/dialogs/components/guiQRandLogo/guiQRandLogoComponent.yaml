@@ -1,0 +1,11 @@
+form:
+  properties: 
+    hirszam1:
+      $type: textField
+      
+  commit:
+    label: save changes
+    class: info.magnolia.ui.admincentral.dialog.action.SaveDialogActionDefinition
+  cancel:
+    label: cancel
+    class: info.magnolia.ui.admincentral.dialog.action.CancelDialogActionDefinition

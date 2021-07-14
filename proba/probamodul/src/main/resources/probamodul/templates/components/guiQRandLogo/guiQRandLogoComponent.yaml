@@ -1,0 +1,5 @@
+title: gui logo and qr
+renderType: freemarker
+templateScript: /probamodul/templates/components/guiQRandLogo/guiQRandLogoComponent.ftl
+dialog: probamodul:components/guiQRandLogo/guiQRandLogoComponent
+visible: true

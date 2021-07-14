@@ -1,4 +1,5 @@
 form:
+  label: adatok megadása guidance.hu számára 
   tabs:
     - name: telefon
       label: telefon
@@ -6,26 +7,49 @@ form:
         - name: telefon1
           fieldType: text
           label: telefon 1
+          required: true
+          
 
         - name: telefon2
           fieldType: text
           label: telefon 2
+         
 
         - name: telefon3
           fieldType: text
           label: telefon 3
+        
 
         - name: telefon4
           fieldType: text
           label: telefon 4
-       
 
+        - name: telefonText
+          fieldType: text
+          label: telefonszámok elott megjelenő szöveg
+
+        - name: image
+          class: info.magnolia.ui.form.field.definition.LinkFieldDefinition
+          label: egy kepet ide
+          targetWorkspace: dam
+          appName: assets
+          identifierToPathConverter:
+            class:info.magnolia.dam.app.assets.field.translator.AssetCompositeIdKeyTranslator
+          contentPreviewDefinition:
+            contentPreviewClass: info.magnolia.dam.app.ui.field.DamFilePreviewComponent
+
+
+
+
+
+       
     - name: fax
       label: fax
       fields: 
         - name: fax
           fieldType: text
           label: fax
+          required: true
 
 #kell majd validalas
     - name: email
@@ -34,6 +58,7 @@ form:
         - name: email
           fieldType: text
           label: emial
+          required: true
 
 
     - name: address
@@ -42,6 +67,7 @@ form:
         - name: address
           fieldType: text
           label: cim
+          required: true
 
 
     - name: socialmedia1
@@ -50,6 +76,7 @@ form:
         - name: face
           fieldType: text
           label: facebook
+          required: true
 
     - name: socialmedia2
       label: linkedIn
@@ -57,11 +84,14 @@ form:
         - name: linkdin
           fieldType: text
           label: LinkedIn
+          required: true
 
 
+actions:
+  commit:
+    label: save changes
+    class: info.magnolia.ui.admincentral.dialog.action.SaveDialogActionDefinition
+  cancel:
+    label: cancel
+    class: info.magnolia.ui.admincentral.dialog.action.CancelDialogActionDefinition
 
-
-
-
-
-  
