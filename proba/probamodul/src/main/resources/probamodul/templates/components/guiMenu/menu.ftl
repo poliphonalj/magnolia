@@ -7,7 +7,7 @@
     <div class="navbar-header">
  
  
-      <a class="navbar-brand" href="#">
+      <a class="navbar-brand" style="height:100%;" href="#">
        <img src="${damfn.getAssetLink("jcr:90180d68-8662-4198-8f6c-fa3fad673e6d")}"/>
       </a>
       
@@ -29,7 +29,7 @@
 [#assign menupontok = cmsfn.children(navfn.rootPage(content),"mgnl:page")]
 																	<!-- ide jonnek a nav elemek-->
 	[#list menupontok as actualMenupont]
-		
+		<!-- a menupont az maga egy oldal, itt kell lekerni hogy engedi e a menu megjelenitet>
 					<!-- lehetne nav fuggvennel is gyerekeit adja vissza-->
 			
 			[#assign subMenu = navfn.navItems(actualMenupont)]

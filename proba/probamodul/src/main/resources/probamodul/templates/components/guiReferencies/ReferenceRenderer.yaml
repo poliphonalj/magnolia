@@ -1,5 +1,5 @@
 title: referenciak
 renderType: freemarker
 templateScript: /probamodul/templates/components/guiReferencies/ReferenceRenderer.ftl
-
+dialog: probamodul:components/guiReference/referenceComponent
 visible: true

@@ -1,0 +1,6 @@
+form:
+  label: adatok megadása guidance.hu számára 
+  properties:
+    isEnabledInMenu:
+      $type: checkBoxField
+      label: szerepeljen- e az oldal a menü-ben?

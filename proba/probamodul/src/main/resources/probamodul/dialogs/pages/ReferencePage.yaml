@@ -6,6 +6,10 @@ form:
     windowTitle:
       $type: textField
       i18n: true
+    isEnabledInMenu:
+      $type: checkBoxField
+      label: szerepeljen- e az oldal a menü-ben?
+
 
 
   commit:
