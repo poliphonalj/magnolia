@@ -5,6 +5,13 @@ dialog: probamodul:pages/mainPage
 visible: true
 
 areas:
+  header:
+    type: single
+    availableComponents:
+      Menu-komponens:
+        id: probamodul:components/guiMenu/menu
+
+
   main:
     type: single
     availableComponents:

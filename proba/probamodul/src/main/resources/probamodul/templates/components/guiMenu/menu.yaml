@@ -1,0 +1,5 @@
+title: menu
+renderType: freemarker
+templateScript: /probamodul/templates/components/guiMenu/menu.ftl
+
+visible: true
