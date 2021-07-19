@@ -14,6 +14,21 @@
   <packaging>war</packaging>
   
   
+  
+  
+  
+  
+  
+ 
+  
+  
+  
+  
+  
+  
+  
+  
+  
   <dependencies>
     <!--
      Add your project specific dependencies here:
@@ -51,6 +66,76 @@
 			<artifactId>magnolia-empty-webapp</artifactId>
 			<type>pom</type>
 		</dependency>
+		
+		
+		<dependency>
+			<groupId>info.magnolia.site</groupId>
+			<artifactId>magnolia-site-app</artifactId>
+		</dependency>
+		
+		<dependency>
+		<groupId>info.magnolia.templating</groupId>
+		<artifactId>magnolia-templating-essentials-imaging</artifactId>
+		
+	</dependency>
+	
+	
+	
+	<!-- https://mvnrepository.com/artifact/info.magnolia.dam/magnolia-dam-imaging -->
+<dependency>
+    <groupId>info.magnolia.dam</groupId>
+    <artifactId>magnolia-dam-imaging</artifactId>
+ 
+</dependency>
+
+
+<!-- https://mvnrepository.com/artifact/info.magnolia.imaging/magnolia-imaging-support -->
+<dependency>
+    <groupId>info.magnolia.imaging</groupId>
+    <artifactId>magnolia-imaging-support</artifactId>
+   
+</dependency>
+
+
+	
+	
+	
+	
+	
+	
+	 <dependency>
+  <groupId>info.magnolia.publishing</groupId>
+  <artifactId>magnolia-publishing-core</artifactId>
+
+</dependency>
+
+<dependency>
+  <groupId>info.magnolia.publishing</groupId>
+  <artifactId>magnolia-publishing-sender</artifactId>
+ 
+</dependency>
+
+<dependency>
+  <groupId>info.magnolia.publishing</groupId>
+  <artifactId>magnolia-publishing-receiver</artifactId>
+
+</dependency>
+
+<dependency>
+  <groupId>info.magnolia.publishing</groupId>
+  <artifactId>magnolia-publishing-app</artifactId>
+
+</dependency>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 
 
     <!-- option ii - magnolia-community-webapp -->

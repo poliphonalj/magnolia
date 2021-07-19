@@ -409,6 +409,106 @@ form:
 
 
 
+areas:
+  myArea:
+    availableComponents:
+      myComponent:
+        id: my-module:components/myComponent
+        permissions:
+          write:
+            roles: [editors, superuser]
+          move:
+            roles: [senior-editor, superuser]
+          delete:
+            roles: [editors, superuser]
+          personalize:
+            roles: [senior-editor, superuser]
+
+
+
+
+3db area egymás mellett
+
+<div class="row">
+	<div class="col-sm-4">
+ 		<div class="panel panel-default">
+ 			<div class="panel-body">
+ 				[@cms.area name="areaLeft"/]
+			</div>
+		</div>
+	 </div>
+ 
+ 	<div class="col-sm-4">
+ 		<div class="panel panel-default">
+ 			<div class="panel-body">
+				[@cms.area name="areaCenter"/]
+			 </div>
+ 		</div>
+ 	</div> 
+
+	<div class="col-sm-4">
+ 		<div class="panel panel-default">
+ 			<div class="panel-body">
+				[@cms.area name="areaRight"/]
+			 </div>
+ 		</div>
+ 	</div> 
+
+</div>
+
+
+
+
+
+
+
+
+
+
+	[#assign binaryNode = cmsfn.asJCRNode(content).getNode('areaRight') /]
+[#assign imgLink = imgfn.getImageVariationLinkFromBinary(binaryNode,'original') /]
+[#assign imgLink240 = imgfn.getImageVariationLinkFromBinary(binaryNode,'240x180') /]
+
+<div>
+    <span>The default image</span><br/>
+    <img src="${imgLink}"><br/>
+    <span>Image variation 240</span><br/>
+    <img src="${imgLink240}">
+</div>
+
+
+
+
+
+
+
+
+
+
+
+ez megjelenit legalabb egy kepet itemkeyyel
+[#assign imgItemKey = content.imagetelefon]
+${imgItemKey}
+
+
+
+     [#assign myMediumRendition = damfn.getRendition(imgItemKey, "thumbnail")]
+   
+        <img src="${myMediumRendition.getLink()}"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 [@greet person=i/]
  
  [#macro greet person]

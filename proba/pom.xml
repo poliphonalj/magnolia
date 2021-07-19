@@ -83,7 +83,68 @@
 		<version>1.4.1</version>
 	</dependency>
 
+<!-- https://mvnrepository.com/artifact/info.magnolia.dam/magnolia-dam-imaging -->
+<dependency>
+    <groupId>info.magnolia.dam</groupId>
+    <artifactId>magnolia-dam-imaging</artifactId>
+    <version>3.0.8</version>
+</dependency>
+
+
+
+<!-- https://mvnrepository.com/artifact/info.magnolia.imaging/magnolia-imaging-support -->
+<dependency>
+    <groupId>info.magnolia.imaging</groupId>
+    <artifactId>magnolia-imaging-support</artifactId>
+    <version>3.4.4</version>
+</dependency>
+
+
+
+
+
+
+
+<dependency>
+  <groupId>info.magnolia.publishing</groupId>
+  <artifactId>magnolia-publishing-core</artifactId>
+  <version>1.2.7</version>
+</dependency>
+
+<dependency>
+  <groupId>info.magnolia.publishing</groupId>
+  <artifactId>magnolia-publishing-sender</artifactId>
+  <version>1.2.7</version>
+</dependency>
+
+<dependency>
+  <groupId>info.magnolia.publishing</groupId>
+  <artifactId>magnolia-publishing-receiver</artifactId>
+  <version>1.2.7</version>
+</dependency>
+
+<dependency>
+  <groupId>info.magnolia.publishing</groupId>
+  <artifactId>magnolia-publishing-app</artifactId>
+  <version>1.2.7</version>
+</dependency>
+
+
+
+
+
+
+
+
+
+
+
+
+
 	</dependencies>
+	
+	
+	
 </dependencyManagement>
 	
 	

@@ -19,7 +19,6 @@ form:
           fieldType: text
           label: telefon 3
         
-
         - name: telefon4
           fieldType: text
           label: telefon 4
@@ -28,18 +27,24 @@ form:
           fieldType: text
           label: telefonszámok elott megjelenő szöveg
 
+      
+
+#ez a damba megy!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
         - name: image
-          class: info.magnolia.ui.form.field.definition.LinkFieldDefinition
-          label: egy kepet ide
+          fieldType: link
           targetWorkspace: dam
           appName: assets
           identifierToPathConverter:
-            class:info.magnolia.dam.app.assets.field.translator.AssetCompositeIdKeyTranslator
+            class: info.magnolia.dam.app.assets.field.translator.AssetCompositeIdKeyTranslator
           contentPreviewDefinition:
             contentPreviewClass: info.magnolia.dam.app.ui.field.DamFilePreviewComponent
 
 
 
+
+        - name: imagetelefon
+          class: info.magnolia.ui.form.field.definition.BasicUploadFieldDefinition
+          binaryNodeName: myNode
 
 
        
@@ -51,6 +56,17 @@ form:
           label: fax
           required: true
 
+        - name: imagefax
+          class: info.magnolia.ui.form.field.definition.LinkFieldDefinition
+          label: a fax-hoz tartozó piktogram
+          targetWorkspace: dam
+          appName: assets
+          identifierToPathConverter:
+            class:info.magnolia.dam.app.assets.field.translator.AssetCompositeIdKeyTranslator
+          contentPreviewDefinition:
+            contentPreviewClass: info.magnolia.dam.app.ui.field.DamFilePreviewComponent
+
+
 #kell majd validalas
     - name: email
       label: email
@@ -59,6 +75,16 @@ form:
           fieldType: text
           label: emial
           required: true
+        
+        - name: imageemail
+          class: info.magnolia.ui.form.field.definition.LinkFieldDefinition
+          label: az email-hez tartozó piktogram
+          targetWorkspace: dam
+          appName: assets
+          identifierToPathConverter:
+            class:info.magnolia.dam.app.assets.field.translator.AssetCompositeIdKeyTranslator
+          contentPreviewDefinition:
+            contentPreviewClass: info.magnolia.dam.app.ui.field.DamFilePreviewComponent
 
 
     - name: address
@@ -69,6 +95,16 @@ form:
           label: cim
           required: true
 
+        - name: imagecim
+          class: info.magnolia.ui.form.field.definition.LinkFieldDefinition
+          label: a címhez tartozó piktogram
+          targetWorkspace: dam
+          appName: assets
+          identifierToPathConverter:
+            class:info.magnolia.dam.app.assets.field.translator.AssetCompositeIdKeyTranslator
+          contentPreviewDefinition:
+            contentPreviewClass: info.magnolia.dam.app.ui.field.DamFilePreviewComponent
+
 
     - name: socialmedia1
       label: facebook
@@ -78,6 +114,17 @@ form:
           label: facebook
           required: true
 
+        - name: imagefacebook
+          class: info.magnolia.ui.form.field.definition.LinkFieldDefinition
+          label: a facebookhoz tartozó piktogram
+          targetWorkspace: dam
+          appName: assets
+          identifierToPathConverter:
+            class:info.magnolia.dam.app.assets.field.translator.AssetCompositeIdKeyTranslator
+          contentPreviewDefinition:
+            contentPreviewClass: info.magnolia.dam.app.ui.field.DamFilePreviewComponent
+
+
     - name: socialmedia2
       label: linkedIn
       fields: 
@@ -85,6 +132,17 @@ form:
           fieldType: text
           label: LinkedIn
           required: true
+
+        - name: linkedin
+          class: info.magnolia.ui.form.field.definition.LinkFieldDefinition
+          label: a LinkedIn-hez tartozó piktogram
+          targetWorkspace: dam
+          appName: assets
+          identifierToPathConverter:
+            class:info.magnolia.dam.app.assets.field.translator.AssetCompositeIdKeyTranslator
+          contentPreviewDefinition:
+            contentPreviewClass: info.magnolia.dam.app.ui.field.DamFilePreviewComponent
+
 
 
 actions:

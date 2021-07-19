@@ -10,15 +10,30 @@ areas:
     availableComponents:
       Reference-komponens:
         id: probamodul:components/guiReferencies/ReferenceRenderer
-      QR and Logo Component:
-        id: probamodul:components/guiQRandLogo/guiQRandLogoComponent
+      
 
   footer:
-    type: single
-    availableComponents:
-      kontakt-komponens:
-        id: probamodul:components/guiContacts/ReferenceRenderer
-    inheritance:
-      enabled: true
-      #components: filtered   #csak azokat a komponenseket örökiti ahol az inheritable property true
-      components: all
+    type: noComponent
+    templateScript: /probamodul/templates/areas/footer.ftl
+    
+    areas:
+      areaLeft:
+          type: single
+          availableComponents:
+            QR and Logo komponens:
+              id: probamodul:components/guiQRandLogo/guiQRandLogoComponent
+       
+      areaCenter:
+          type: single
+          availableComponents:
+            QR and Logo komponens:
+              id: probamodul:components/guiQRandLogo/guiQRandLogoComponent
+      
+      areaRight:
+          type: single
+          availableComponents:
+            QR and Logo komponens:
+              id: probamodul:components/guiContacts/guiContactComponent
+      
+
+

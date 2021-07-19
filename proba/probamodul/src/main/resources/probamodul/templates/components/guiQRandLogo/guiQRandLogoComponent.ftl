@@ -1,1 +1,3 @@
-qr and logo
+<div id="footercomp">
+	gui qr and logo
+</div>

@@ -4,7 +4,8 @@
  		date: ${actualNewsItem.publish_date}<br>
  		author: ${actualNewsItem.author}<br>
  		intro: ${actualNewsItem.author}<br>
- 		text: ${actualNewsItem.text}<br>
+ 		text:[#assign binaryNode = cmsfn.asJCRNode(content).getNode('binaryNodeName')]
+[#assign imgLink = imgfn.getImageVariationLinkFromBinary(binaryNode,'original')]<br>
  		image: ${actualNewsItem.image}<br>
  		[#assign img = actualNewsItem.image]
 		<img src="${damfn.getAssetLink(img!)}" width="300" height="234">		

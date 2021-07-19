@@ -1,11 +1,26 @@
 form:
-  properties: 
-    hirszam1:
-      $type: textField
-      
-  commit:
-    label: save changes
-    class: info.magnolia.ui.admincentral.dialog.action.SaveDialogActionDefinition
-  cancel:
-    label: cancel
-    class: info.magnolia.ui.admincentral.dialog.action.CancelDialogActionDefinition
+  label: adatok megadása guidance.hu számára 
+  tabs:
+  - name: qrandlogo
+    label: logo
+    fields:
+
+        - name: imageLogo
+          class: info.magnolia.ui.form.field.definition.LinkFieldDefinition
+          label: ide jön a céges logo
+          targetWorkspace: dam
+          appName: assets
+          identifierToPathConverter:
+            class:info.magnolia.dam.app.assets.field.translator.AssetCompositeIdKeyTranslator
+          contentPreviewDefinition:
+            contentPreviewClass: info.magnolia.dam.app.ui.field.DamFilePreviewComponent
+
+        - name: imageQR
+          class: info.magnolia.ui.form.field.definition.LinkFieldDefinition
+          label: ide jön a céges qr
+          targetWorkspace: dam
+          appName: assets
+          identifierToPathConverter:
+            class:info.magnolia.dam.app.assets.field.translator.AssetCompositeIdKeyTranslator
+          contentPreviewDefinition:
+            contentPreviewClass: info.magnolia.dam.app.ui.field.DamFilePreviewComponent
