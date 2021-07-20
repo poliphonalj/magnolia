@@ -595,15 +595,14 @@ a-menu:hover {
 
 
 <nav class="navbar navbar-light" style="background-color: #35353f ;">
-  <div class="container-fluid" >
+
+       <div class="container-fluid" >
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
       
       
-      <a class="navbar-brand" href="#">
-       <img src="${damfn.getAssetLink("jcr:90180d68-8662-4198-8f6c-fa3fad673e6d")}"/>
-      </a>
       
+<a class="navbar-brand" href="#">Hidden brand</a>
       
       <button type="button"  class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"  style="background-color: pink ;">
         <span class="sr-only">Toggle navigation</span>
@@ -616,7 +615,6 @@ a-menu:hover {
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1"  >
       <ul class="nav navbar-nav" >
-
 
 
 																		<!-- ide jonnek a nav elemek-->

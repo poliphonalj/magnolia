@@ -1,0 +1,5 @@
+title: kapcsolat
+renderType: freemarker
+templateScript: /probamodul/templates/components/guiContactsComposit/contactsComposit.ftl
+dialog: probamodul:components/guiContactsComposit/contactsComposit
+visible: true

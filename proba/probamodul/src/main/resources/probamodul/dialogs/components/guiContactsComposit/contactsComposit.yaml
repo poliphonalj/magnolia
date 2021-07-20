@@ -1,0 +1,49 @@
+form:
+  tabs:
+    - name: tabText
+      label: Multivalue composite
+      fields:
+        - name: contacts
+          fieldType: multiValue
+          label: Guidance.hu kontakt adatainak megadasa
+          transformerClass: info.magnolia.ui.form.field.transformer.multi.MultiValueSubChildrenNodePropertiesTransformer
+          field:
+            name: compositeField
+            fieldType: composite
+            layout: horiontal
+            transformerClass: info.magnolia.ui.form.field.transformer.composite.NoOpCompositeTransformer
+            fields:
+              - name: key
+                fieldType: text
+                label: a mezo neve
+                maxLength: 20
+                width: 20
+
+              - name: value
+                fieldType: text
+                label: a mezo erteke
+                maxLength: 20
+
+              - name: descr
+                fieldType: text
+                label: kapcsolat típushoz tartozó kategória leírás
+                maxLength: 20
+
+              - name: image
+                fieldType: link
+                targetWorkspace: dam
+                appName: assets
+                identifierToPathConverter:
+                  class: info.magnolia.dam.app.assets.field.translator.AssetCompositeIdKeyTranslator
+                contentPreviewDefinition:
+                  contentPreviewClass: info.magnolia.dam.app.ui.field.DamFilePreviewComponent
+
+
+actions:
+  commit:
+    label: save changes
+    class: info.magnolia.ui.admincentral.dialog.action.SaveDialogActionDefinition
+  cancel:
+    label: cancel
+    class: info.magnolia.ui.admincentral.dialog.action.CancelDialogActionDefinition
+

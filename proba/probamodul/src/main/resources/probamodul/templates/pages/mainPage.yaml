@@ -37,10 +37,11 @@ areas:
               id: probamodul:components/guiQRandLogo/guiQRandLogoComponent
       
       areaRight:
-          type: single
+          type: list
           availableComponents:
-            QR and Logo komponens:
+            kontktok:
               id: probamodul:components/guiContacts/guiContactComponent
-      
+            kompozit-kontktok:
+              id: probamodul:components/guiContactsComposit/contactsComposit
 
 

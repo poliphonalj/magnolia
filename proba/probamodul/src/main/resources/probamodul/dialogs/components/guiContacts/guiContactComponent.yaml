@@ -4,27 +4,18 @@ form:
     - name: telefon
       label: telefon
       fields:
-        - name: telefon1
-          fieldType: text
-          label: telefon 1
+        - name: telefonmulti
+          fieldType: multiValue
+          label: telefon szamok megadasa
           required: true
-          
-
-        - name: telefon2
-          fieldType: text
-          label: telefon 2
+          field:
+            name: telefon
+            fieldType: text
+            label: telefon szám(ok)
          
 
-        - name: telefon3
-          fieldType: text
-          label: telefon 3
-        
-        - name: telefon4
-          fieldType: text
-          label: telefon 4
-
+      
         - name: telefonText
-          fieldType: text
           label: telefonszámok elott megjelenő szöveg
 
       

@@ -1,22 +1,29 @@
 
- 
- 
-<nav class="navbar navbar-light" style="background-color: pink ;">
+
+[#assign menupontok = cmsfn.children(content, "mgnl:page")]
+
+
+
+
+
+
+
+<nav class="navbar navbar-light" style="background-color: #35353f ;">
   <div class="container-fluid" >
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
- 
- 
-      <a class="navbar-brand" style="height:100%;" href="#">
+      
+      
+      <a class="navbar-brand" href="#">
        <img src="${damfn.getAssetLink("jcr:90180d68-8662-4198-8f6c-fa3fad673e6d")}"/>
       </a>
       
       
       <button type="button"  class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"  style="background-color: pink ;">
         <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar" style="background-color: #35353f"></span>		<!-- a hamburger menu csikjai -->
-        <span class="icon-bar" style="background-color: #35353f"></span>
-        <span class="icon-bar" style="background-color: #35353f"></span>
+        <span class="icon-bar" style="background-color: lightblue"></span>		<!-- a hamburger menu csikjai -->
+        <span class="icon-bar" style="background-color: lightblue"></span>
+        <span class="icon-bar" style="background-color: lightblue"></span>
       </button>
     </div>
 
@@ -26,16 +33,15 @@
 
 
 
-[#assign menupontok = cmsfn.children(navfn.rootPage(content),"mgnl:page")]
-																	<!-- ide jonnek a nav elemek-->
+																		<!-- ide jonnek a nav elemek-->
 	[#list menupontok as actualMenupont]
-		<!-- a menupont az maga egy oldal, itt kell lekerni hogy engedi e a menu megjelenitet>
+		hellop
 					<!-- lehetne nav fuggvennel is gyerekeit adja vissza-->
 			
-			[#assign subMenu = navfn.navItems(actualMenupont)]
+			[#assign subMenu = navfn.navItems(actualMenupont)]]
 			[#if subMenu?size!=0]
 				<li class="dropdown" >
-					<a href="#" style="background-color: #35353f" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">${actualMenupont}<span class="caret"></span></a>
+					<a href="#" style="background-color: pink" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">${actualMenupont}<span class="caret"></span></a>
 						<ul class="dropdown-menu">
 							[#list subMenu as actualSubMenu]
 								<li><a href="#">${actualSubMenu}</a></li>
@@ -65,11 +71,10 @@
             <li><a href="#">One more separated link</a></li>
           </ul>
         </li>
-      </ul> 
+      </ul>
      
         
-      
+      </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
-
