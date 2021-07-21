@@ -7,7 +7,7 @@ form:
       $type: textField
       i18n: true
 
-
+ 
   commit:
     label: save changes
     class: info.magnolia.ui.admincentral.dialog.action.SaveDialogActionDefinition

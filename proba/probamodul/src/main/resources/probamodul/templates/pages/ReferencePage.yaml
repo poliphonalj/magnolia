@@ -5,8 +5,63 @@ dialog: probamodul:pages/ReferencePage
 visible: true
 
 areas:
+
+  header:
+    type: noComponent
+    templateScript: /probamodul/templates/areas/header.ftl
+    inheritance:
+      enabled: true
+      components: all
+
+    areas:
+      headerLeft:
+          type: single
+          availableComponents:
+            Logo-komponens:
+              id: probamodul:components/guiHeaderLogo/guiHeaderLogo
+
+      headerRight:
+          type: single
+          availableComponents:
+            Menu-komponens:
+              id: probamodul:components/guiMenu/menu
+
+
   main:
     type: single
     availableComponents:
       Reference-komponens:
         id: probamodul:components/guiReferencies/ReferenceRenderer
+
+
+
+
+  footer:
+    type: noComponent
+    templateScript: /probamodul/templates/areas/footer.ftl
+    inheritance:
+      enabled: true
+      components: all
+
+    areas:
+      areaLeft:
+          type: single
+          availableComponents:
+            QR and Logo komponens:
+              id: probamodul:components/guiQRandLogo/guiQRandLogoComponent
+       
+      areaCenter:
+          type: single
+          availableComponents:
+            QR and Logo komponens:
+              id: probamodul:components/guiQRandLogo/guiQRandLogoComponent
+      
+      areaRight:
+          type: list
+          availableComponents:
+            kontktok:
+              id: probamodul:components/guiContacts/guiContactComponent
+            kompozit-kontktok:
+              id: probamodul:components/guiContactsComposit/contactsComposit
+
+

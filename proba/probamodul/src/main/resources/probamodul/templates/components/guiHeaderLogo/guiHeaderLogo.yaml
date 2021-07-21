@@ -1,0 +1,5 @@
+title: header-logo
+renderType: freemarker
+templateScript: /probamodul/templates/components/guiHeaderLogo/guiHeaderLogo.ftl
+dialog: probamodul:components/guiHeaderLogo/guiHeaderLogo
+visible: true
