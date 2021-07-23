@@ -1,4 +1,5 @@
 
+<div>
 
 
 
@@ -7,7 +8,7 @@
 [#assign childNodes=cmsfn.children(node,"lib:alternateCard")/]
 
 	[#list childNodes as actualReference]
-	<div>
+	<div  >
 		[#assign childName = "/"+actualReference.name	]
  		[#assign ref = cmsfn.contentByPath(childName, "alternate-card")]	
  		[#assign focim = ref.focim]
@@ -19,8 +20,8 @@
  		
  		<a href="#${focim}"> <div id="thediv" />
  		
- 		 	<div id="thediv" class="flip-card">
-				<div class="flip-card-inner">
+ 		 	<div id="thediv" class="flip-card" class="row">
+				<div class="flip-card-inner" class="column">
 					<div class="flip-card-front">
 						<img src="${damfn.getAssetLink(img!)}" alt="Avatar" style="width:300px;height:234px;">
 					</div>
@@ -33,7 +34,7 @@
  	</div>
  	<br>
  	[/#list]
-</div>
+</div></div>
 <br>
 <br>
 <br><hr>

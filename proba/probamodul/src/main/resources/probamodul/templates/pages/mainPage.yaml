@@ -5,23 +5,39 @@ dialog: probamodul:pages/mainPage
 visible: true
 
 areas:
+
+   
+
+
+
+
+
   header:
     type: noComponent
     templateScript: /probamodul/templates/areas/header.ftl
-    inheritance:
-      enabled: true
-      components: all
 
     areas:
       headerLeft:
           type: single
+          inheritance:
+            enabled: true
+            components: all
+
           availableComponents:
+
+
             Logo-komponens:
               id: probamodul:components/guiHeaderLogo/guiHeaderLogo
 
       headerRight:
           type: single
+          inheritance:
+            enabled: true
+            components: all
+
           availableComponents:
+
+
             Menu-komponens:
               id: probamodul:components/guiMenu/menu
 
@@ -31,31 +47,42 @@ areas:
     availableComponents:
       Reference-komponens:
         id: probamodul:components/guiReferencies/ReferenceRenderer
+      Image resizer-komponens:
+        id: probamodul:components/guiImageResize/imageResize
       
 
 
   footer:
     type: noComponent
     templateScript: /probamodul/templates/areas/footer.ftl
-    inheritance:
-      enabled: true
-      components: all
+
 
     areas:
       areaLeft:
+          inheritance:
+            enabled: true
+            components: all
+
           type: single
           availableComponents:
             QR and Logo komponens:
               id: probamodul:components/guiQRandLogo/guiQRandLogoComponent
        
       areaCenter:
+          inheritance:
+            enabled: true
+            components: all
+
           type: single
           availableComponents:
             QR and Logo komponens:
               id: probamodul:components/guiQRandLogo/guiQRandLogoComponent
       
       areaRight:
-          type: list
+          inheritance:
+            enabled: true
+            components: all
+          type: single
           availableComponents:
             kontktok:
               id: probamodul:components/guiContacts/guiContactComponent

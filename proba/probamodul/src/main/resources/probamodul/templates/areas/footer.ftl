@@ -19,9 +19,9 @@
  		</div>
  	</div> 
 
-	<div class="col-sm-4">
+	<div class="col-sm-4" >
  		<div class="panel panel-default">
- 			<div class="panel-body">
+ 			<div class="panel-body" style="background-color: pink;">
 				[@cms.area name="areaRight"/]
 			 </div>
  		</div>

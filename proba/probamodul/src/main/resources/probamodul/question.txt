@@ -1,0 +1,5 @@
+1. dialogok testreszabása?
+2. oroklodés >> nem sikerult csak ugyanazon templaten levok kozott
+3. képek resizeolása
+4 i18n mi  a trigger mi a változást kiváltja
+5. site def irása

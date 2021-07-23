@@ -8,8 +8,8 @@
  	${actualProperty.descr} 
  [#assign img = actualProperty.image]	
  	${img}
- 	<img src="${damfn.getAssetLink(img!)}" alt="Avatar" style="width:300px;height:234px;">
- 	
+ 	<img src="${damfn.getAssetLink(img!)}" alt="Avatar" style="width:50px;height:50px;">
+ 	<hr>
  	<br><br><br>
 [/#list]
 

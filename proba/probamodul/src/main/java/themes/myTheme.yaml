@@ -3,7 +3,7 @@ cssFiles:
 jsFiles:
   #JavaScript file configuration
 imaging:
-  class: info.magnolia.templating.imaging.VariationAwareImagingSupport
+
   variations:
     "1600":
       class: info.magnolia.templating.imaging.variation.SimpleResizeVariation

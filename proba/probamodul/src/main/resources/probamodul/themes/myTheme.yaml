@@ -1,0 +1,16 @@
+
+imaging:
+  class: info.magnolia.templating.imaging.VariationAwareImagingSupport
+  variations:
+   
+      "100":
+         class: info.magnolia.templating.imaging.variation.SimpleResizeVariation
+         width: 100
+      "200":
+         class: info.magnolia.templating.imaging.variation.SimpleResizeVariation
+         width: 200
+cssFiles:
+  #CSS file configuration
+jsFiles:
+  #JavaScript file configuration
+   

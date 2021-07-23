@@ -1,0 +1,5 @@
+title: image-resize
+renderType: freemarker
+templateScript: /probamodul/templates/components/guiImageResize/imageResize.ftl
+dialog: probamodul:components/guiImageResize/imageResize
+visible: true

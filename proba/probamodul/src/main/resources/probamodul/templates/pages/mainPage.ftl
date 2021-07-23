@@ -16,22 +16,16 @@
 <!-- Latest compiled JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> 
   
-  
    [@cms.page /]
-   
-	
+
 	<!-- dropdown menu -->
-
-
-
-
-
-
-
 <style>
+
 <!--    .navbar-light {
     min-height: 100px;
 } -->
+
+
 
 .navbar-collapse{
 .navbar-text {
@@ -49,7 +43,6 @@
 a-menu:hover {
    background-color:yellow !important;
  }
-
 
 
   	  /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
@@ -97,63 +90,64 @@ a-menu:hover {
   	color: white;
   	transform: rotateY(180deg);
 	} 
+	
+	
+	
+	/* Style the header */
+.header {
+
+}
+  
+   /* Create 4 equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the 4 columns stack on top of each other instead of next to each other on smaller screens (600px wide or less) */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+} 
+  
+.footer {
+
+  background-color: pink;
+  color: white;
+}  
+  
+  
   </style>
 
 
 </head>
 
 
-   
-
-
-  
 <body>
 
- [@cms.area name="header"/]
+<!-- header-->
+<div class="header">
+ 	[@cms.area name="header"/]
+</div>	
+<!-- End: header -->
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-      
-    
-    
-     
-     
-     
-   
-
-
-
-  hello ez a main area
-  [@cms.area name="main"/]
-
-
-
-
-
-a fejlécet betenni egy header areaba ahonnan csak ezt lehet kivaálasztani, és az osszes oldal ezt megorokli!
-- nem kell hogy legyen dialogja
-- az oldalak dialogjánál egy checkbox kerdezze meg hogy be akar e kerulni a menu rendszerbe
-- a menu
-brand képet betennia fejlécbe?
-
+<!-- main -->
+		[@cms.area name="main" /]
+<!-- End: main -->
 
 <!-- Footer -->
-
-		[@cms.area name="footer" /]
-
+<div class="footer">
+	[@cms.area name="footer" /]
+</div>
 <!-- End: Footer -->
-
 
 </body>
 </html>

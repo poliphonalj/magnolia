@@ -1,0 +1,32 @@
+form:
+  label: adatok megadása guidance.hu számára 
+  tabs:
+  - name: image4Resize
+    label: image4Resize
+    fields:
+
+        - name: image4Resize
+          label: ide jön a méretezni való kep
+          class: info.magnolia.ui.form.field.definition.BasicUploadFieldDefinition
+          binaryNodeName: myNode
+
+
+# DAM ból
+          
+        - name: image5Resize
+          class: info.magnolia.ui.form.field.definition.LinkFieldDefinition
+          label: ide jön a méretezni való kep
+          targetWorkspace: dam
+          appName: assets
+          identifierToPathConverter:
+            class:info.magnolia.dam.app.assets.field.translator.AssetCompositeIdKeyTranslator
+          contentPreviewDefinition:
+            contentPreviewClass: info.magnolia.dam.app.ui.field.DamFilePreviewComponent
+
+actions:  
+  commit:
+    label: save changes
+    class: info.magnolia.ui.admincentral.dialog.action.SaveDialogActionDefinition
+  cancel:
+    label: cancel
+    class: info.magnolia.ui.admincentral.dialog.action.CancelDialogActionDefinition 
