@@ -1,0 +1,7 @@
+form:
+  properties: 
+    welcome:
+      $type: textField
+      required: true
+      description: should be given the welcome-message!
+      label: welcome message

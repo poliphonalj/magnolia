@@ -165,9 +165,17 @@
 </dependency>
 
 
+<dependency>
+  <groupId>info.magnolia.form</groupId>
+  <artifactId>magnolia-form</artifactId>
+</dependency>
 
 
-
+<!-- https://mvnrepository.com/artifact/info.magnolia.passwordmanager/magnolia-module-password-manager -->
+<dependency>
+    <groupId>info.magnolia.passwordmanager</groupId>
+    <artifactId>magnolia-module-password-manager</artifactId>
+</dependency>
 
 
 

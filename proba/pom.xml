@@ -129,8 +129,19 @@
   <version>1.2.7</version>
 </dependency>
 
+<dependency>
+  <groupId>info.magnolia.form</groupId>
+  <artifactId>magnolia-form</artifactId>
+  <version>2.7.3</version>
+</dependency>
 
 
+<!-- https://mvnrepository.com/artifact/info.magnolia.passwordmanager/magnolia-module-password-manager -->
+<dependency>
+    <groupId>info.magnolia.passwordmanager</groupId>
+    <artifactId>magnolia-module-password-manager</artifactId>
+    <version>1.2.3</version>
+</dependency>
 
 
 

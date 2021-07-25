@@ -1,0 +1,6 @@
+
+title: user input form
+renderType: freemarker
+templateScript: /probamodul/templates/components/guiUserInputForm/inputForm.ftl
+
+visible: true

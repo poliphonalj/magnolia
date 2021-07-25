@@ -6,12 +6,6 @@ visible: true
 
 areas:
 
-   
-
-
-
-
-
   header:
     type: noComponent
     templateScript: /probamodul/templates/areas/header.ftl
@@ -22,10 +16,7 @@ areas:
           inheritance:
             enabled: true
             components: all
-
           availableComponents:
-
-
             Logo-komponens:
               id: probamodul:components/guiHeaderLogo/guiHeaderLogo
 
@@ -34,13 +25,9 @@ areas:
           inheritance:
             enabled: true
             components: all
-
           availableComponents:
-
-
             Menu-komponens:
               id: probamodul:components/guiMenu/menu
-
 
   main:
     type: single
@@ -49,20 +36,22 @@ areas:
         id: probamodul:components/guiReferencies/ReferenceRenderer
       Image resizer-komponens:
         id: probamodul:components/guiImageResize/imageResize
-      
+      Welcome-komponens:
+        id: probamodul:components/guiWelcome/welcome
+      user Form-komponens:
+        id: form:components/form
+
 
 
   footer:
     type: noComponent
     templateScript: /probamodul/templates/areas/footer.ftl
 
-
     areas:
       areaLeft:
           inheritance:
             enabled: true
             components: all
-
           type: single
           availableComponents:
             QR and Logo komponens:
@@ -72,7 +61,6 @@ areas:
           inheritance:
             enabled: true
             components: all
-
           type: single
           availableComponents:
             QR and Logo komponens:

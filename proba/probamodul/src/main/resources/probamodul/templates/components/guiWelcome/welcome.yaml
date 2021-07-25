@@ -1,0 +1,5 @@
+title: guidance-welcome page
+renderType: freemarker
+templateScript: /probamodul/templates/components/guiWelcome/welcome.ftl
+dialog: probamodul:components/guiWelcomeDialog/welcomeDialog
+visible: true
