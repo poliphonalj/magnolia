@@ -37,7 +37,8 @@
 				<!-- ha van submenu-->
 				[#if subMenu?size!=0]
 					<li class="dropdown" >
-						<a href="${link}" style="background-color: #35353f" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">${actualMenupont}<span class="caret"></span></a>
+						<a href="${link}" style="background-color: #35353f" class="dropdown-toggle disabled" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">${actualMenupont}<span class="caret"></span></a>
+							
 							<ul class="dropdown-menu">
 								[#list subMenu as actualSubMenu]
 									[#assign linktosubpage=cmsfn.link(actualSubMenu)]
