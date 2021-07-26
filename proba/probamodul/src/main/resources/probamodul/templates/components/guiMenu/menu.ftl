@@ -23,57 +23,41 @@
 	<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1"  >
 		<ul class="nav navbar-nav" >
 			[#assign rootPage =navfn.rootPage(content)]<!-- contentmapot add vissza-->
+			
 			[#if rootPage??]
-				
-iiiiiiiiiiiiidddddddddddweeeee a menupontokba elsore betenni a rootpage-t				
-			[#assign menupontok= navfn.navItems(rootPage)]
-			 
+				<--!	iiiiiiiiiiiiidddddddddddweeeee a menupontokba elsore betenni a rootpage-t	-->			
+				[#assign menupontok= navfn.navItems(rootPage)]
 			[/#if]
 			
 			<!-- ide jonnek a nav elemek-->
-			
-			
-			
 			[#assign i=0]
 			[#list menupontok as actualMenupont]		<!-- lehetne nav fuggvennel is gyerekeit adja vissza-->
 				[#assign subMenu = navfn.navItems(actualMenupont)]]
-				
+				[#assign link= cmsfn.link(actualMenupont)]
+				<!-- ha van submenu-->
 				[#if subMenu?size!=0]
 					<li class="dropdown" >
-						<a href="href="/${actualMenupont}.html222" style="background-color: #35353f" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">${actualMenupont}<span class="caret"></span></a>
+						<a href="${link}" style="background-color: #35353f" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">${actualMenupont}<span class="caret"></span></a>
 							<ul class="dropdown-menu">
 								[#list subMenu as actualSubMenu]
-									<li><a href="#">${actualSubMenu}</a></li>
+									[#assign linktosubpage=cmsfn.link(actualSubMenu)]
+									
+									<li><a href="${linktosubpage}">${actualSubMenu}</a></li>
 								[/#list]
 							</ul>
 					</li>
 				
 				<!-- ha nincs submenu-->
 				[#else]
-					[#assign link=navfn.link(rootPage)/]
-				
 					[#if i=0]		<!-- azert kell, hogy a főoldal menüjét a forciklus csak egyszer tegye ki-->
-						<li><a style="background-color: #35353f ;" href="${link}">${rootPage}</a></li>
+						[#assign link1= cmsfn.link(rootPage)]
+						<li><a style="background-color: #35353f ;" href="${link1}">${rootPage}</a></li>
 					[/#if]
 					
-			
-					<!-- a roootpage:   /proba-webapp/mainpage2.html -->
-					<!-- a link változoóbol le kell vágni a .html véget..... -->
-				
-					
-					[#assign link= cmsfn.link(actualMenupont)]
-					
-				<li><a style="background-color: #35353f ;" href="${link}">${actualMenupont}</a></li>
-				
-			
-				
-				
-				
+					<li><a style="background-color: #35353f ;" href="${link}">${actualMenupont}</a></li>
 				[/#if]
 				[#assign i=i+1]
 			[/#list]
-			
-			  
 			 					
 		</ul>
 	</div><!-- /.navbar-collapse -->
