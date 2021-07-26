@@ -1,3 +1,8 @@
+
+
+
+
+
 <div style="background-color: pink;">
 	<nav class="navbar navbar-light" style="background-color: #35353f ;">
 		<div class="container-fluid" >
@@ -35,23 +40,40 @@ iiiiiiiiiiiiidddddddddddweeeee a menupontokba elsore betenni a rootpage-t
 				
 				[#if subMenu?size!=0]
 					<li class="dropdown" >
-						<a href="href="${rootPage}/${actualMenupont}.html" style="background-color: #35353f" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">${actualMenupont}<span class="caret"></span></a>
+						<a href="href="/${actualMenupont}.html222" style="background-color: #35353f" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">${actualMenupont}<span class="caret"></span></a>
 							<ul class="dropdown-menu">
 								[#list subMenu as actualSubMenu]
 									<li><a href="#">${actualSubMenu}</a></li>
 								[/#list]
 							</ul>
 					</li>
+				
+				<!-- ha nincs submenu-->
 				[#else]
+					[#assign link=navfn.link(rootPage)/]
+				
 					[#if i=0]		<!-- azert kell, hogy a főoldal menüjét a forciklus csak egyszer tegye ki-->
-						<li><a style="background-color: #35353f ;" href="${rootPage}.html">${rootPage}</a></li>
+						<li><a style="background-color: #35353f ;" href="${link}">${rootPage}</a></li>
 					[/#if]
-					[#assign i=i+1]
-				<li><a style="background-color: #35353f ;" href="${rootPage}/${actualMenupont}.html">${actualMenupont}</a></li>
+					
+			
+					<!-- a roootpage:   /proba-webapp/mainpage2.html -->
+					<!-- a link változoóbol le kell vágni a .html véget..... -->
+				
+					
+					[#assign link= cmsfn.link(actualMenupont)]
+					
+				<li><a style="background-color: #35353f ;" href="${link}">${actualMenupont}</a></li>
+				
+			
+				
+				
+				
 				[/#if]
+				[#assign i=i+1]
 			[/#list]
 			
-			
+			  
 			 					
 		</ul>
 	</div><!-- /.navbar-collapse -->
@@ -61,4 +83,8 @@ iiiiiiiiiiiiidddddddddddweeeee a menupontokba elsore betenni a rootpage-t
 
 
 
-</div>
+</div>${rootPage}
+${navfn.link(rootPage)
+
+
+}
