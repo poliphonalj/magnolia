@@ -1,21 +1,12 @@
 package gui.guidance;
-import info.magnolia.*;
 
-import java.sql.Date;
 import java.util.ArrayList;
 import java.util.Collection;
-import java.util.Collections;
 import java.util.GregorianCalendar;
 import javax.jcr.AccessDeniedException;
 import javax.jcr.ItemNotFoundException;
 import javax.jcr.Node;
 import javax.jcr.RepositoryException;
-import javax.servlet.http.HttpServletRequest;
-
-import org.apache.jackrabbit.commons.iterator.AbstractLazyIterator;
-
-import com.google.inject.spi.PrivateElements;
-
 import info.magnolia.context.MgnlContext;
 import info.magnolia.jcr.util.ContentMap;
 import info.magnolia.rendering.model.RenderingModel;
