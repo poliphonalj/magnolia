@@ -40,7 +40,8 @@ areas:
         id: probamodul:components/guiWelcome/welcome
       user Form-komponens:
         id: form:components/form
-
+      form megjelenito-komponens:
+        id: probamodul:components/guiResultFromForm/formResult
 
 
   footer:

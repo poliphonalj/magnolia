@@ -1,0 +1,6 @@
+title: ResultPage for form
+renderType: freemarker
+templateScript: /probamodul/templates/components/guiResultFromForm/formResult.ftl
+
+modelClass: gui.guidance.formResult.FormResult
+visible: true

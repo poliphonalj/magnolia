@@ -1,8 +1,4 @@
 
-
-
-
-
 <div style="background-color: pink;">
 	<nav class="navbar navbar-light" style="background-color: #35353f ;">
 		<div class="container-fluid" >
