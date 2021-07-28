@@ -104,6 +104,4 @@ public class FormResult <RD extends ConfiguredTemplateDefinition> extends Render
 	public void setList(ArrayList<DataModel> list) {
 		this.list = list;
 	}
-	
-	
 }

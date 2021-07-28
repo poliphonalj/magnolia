@@ -2,7 +2,6 @@ package gui.guidance.formResult;
 
 import org.apache.commons.collections.map.HashedMap;
 
-import com.google.inject.spi.PrivateElements;
 
 public class DataModel{
 	private HashedMap hMap=new HashedMap();
@@ -17,9 +16,4 @@ public class DataModel{
 	public void sethMap(HashedMap hMap) {
 		this.hMap = hMap;
 	}
-	
-	public String getVal() {
-		return "valuewwwwwwwww";
-	}
-
 }

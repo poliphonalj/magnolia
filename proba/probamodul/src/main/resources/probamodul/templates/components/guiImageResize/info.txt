@@ -1,0 +1,1 @@
+ez a funkció még nem müködik, mindig csak az eredeti méretet jeleníti meg, tehát valahol a theme-lesz a baj????

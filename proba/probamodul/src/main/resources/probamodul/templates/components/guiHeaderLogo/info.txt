@@ -1,0 +1,2 @@
+ez egy sima kép komponens, mely a header-ben fog megjelenni a céges logoként
+TODOs: link beadása asszem

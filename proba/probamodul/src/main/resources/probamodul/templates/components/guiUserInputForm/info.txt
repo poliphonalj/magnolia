@@ -1,0 +1,2 @@
+egy form komponens, melyet tudunk elvileg szabadon változtatni, új mezőket felvenni stb.
+Át van alakítva és az adatokat a JCR-ba menti. Elvileg bármennyi fieldet tud kezelni a forban mert általánosra akartam megirni.

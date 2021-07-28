@@ -1,0 +1,8 @@
+ez egy dinamikus menu komponens, mely uj oldal létrehozásakor automatikusan bővül, illetve oldal törlésénél szűkül??
+ezt még nem teszteltem. Ha aloldalt hozunk létre, akkor submenü keletkezik.
+
+responziv >>képes hamburger menüvé alakulni!
+
+//TODOs: 
+hmburger menu linkjit megirni, css-ket a theme-be tenni, egyes oldalak eldonthessék hogy akarnek-e a menube kerülni.
+többnyelvűsítés

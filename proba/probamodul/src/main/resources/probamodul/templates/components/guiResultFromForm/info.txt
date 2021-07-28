@@ -1,1 +1,4 @@
 a form által JCR-ba beirt adatokat akarom itt kiszedni
+ehhez hasznalom a gui.guidance.formResult java package-t is.
+
+Ebben a Java fájlokban dolgozom fel az adatokat a JCR-ból és továbbítom az ftl-nek.

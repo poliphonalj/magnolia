@@ -29,13 +29,12 @@
 				<p>${peaceOfNews.intro}</p>
 				<p>${peaceOfNews.text}</p>
 				<p>${peaceOfNews.publish_date!}</p>
-				<p>${peaceOfNews.image}</p>
+				<p>${peaceOfNews.image!}</p>
 				
-				[#assign img = peaceOfNews.image]
-				
-				<img src="${damfn.getAssetLink(img!)}" width="300" height="234">	<!--showing an image, we need to use an embed html image tag-->
-				
-				
+				[#if peaceOfNews.image??]
+					[#assign img = peaceOfNews.image]
+					<img src="${damfn.getAssetLink(img!)}" width="300" height="234">	<!--showing an image, we need to use an embed html image tag-->
+				[/#if]
 				<br><br>
 			[/#list]	
  	

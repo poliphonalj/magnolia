@@ -13,21 +13,22 @@ areas:
     areas:
       headerLeft:
           type: single
-          inheritance:
-            enabled: true
-            components: all
           availableComponents:
             Logo-komponens:
               id: probamodul:components/guiHeaderLogo/guiHeaderLogo
-
-      headerRight:
-          type: single
           inheritance:
             enabled: true
             components: all
+
+      headerRight:
+          type: single
           availableComponents:
             Menu-komponens:
               id: probamodul:components/guiMenu/menu
+          inheritance:
+            enabled: true
+            components: all
+
 
   main:
     type: single

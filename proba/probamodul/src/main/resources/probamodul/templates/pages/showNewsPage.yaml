@@ -6,6 +6,24 @@ dialog: probamodul:pages/showNewsPage
 visible: true
 
 areas:
+  header:
+    type: noComponent
+    templateScript: /probamodul/templates/areas/header.ftl
+
+    areas:
+      headerLeft:
+          type: single
+          availableComponents:
+            Logo-komponens:
+              id: probamodul:components/guiHeaderLogo/guiHeaderLogo
+
+      headerRight:
+          type: single
+          availableComponents:
+            Menu-komponens:
+              id: probamodul:components/guiMenu/menu
+
+
   main:
     type: list
     maxComponents: 3
