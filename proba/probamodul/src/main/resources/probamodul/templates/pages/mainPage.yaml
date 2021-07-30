@@ -5,7 +5,6 @@ dialog: probamodul:pages/mainPage
 visible: true
 
 areas:
-
   header:
     type: noComponent
     templateScript: /probamodul/templates/areas/header.ftl

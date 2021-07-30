@@ -19,6 +19,20 @@ referencepage: az osszes referenciat kiteszi a db bol mukodik jol!
 
 
 
+[#assign binaryNode = cmsfn.asJCRNode(content).getNode('myNode') /]
+[#assign imgLink240 = imgfn.getImageVariationLinkFromBinary(binaryNode,"100") /]
+ 
+${content} -- contnet<br>
+${binaryNode} -- binaryNoode<br>
+${imgLink240} -- imagelink<br>
+
+<img src="imgLink240">
+    
+
+
+
+<!--[#assign link =damfpfn.getVariationUrl(${myAsset},100,100)]-->
+
 
 
 
@@ -692,7 +706,7 @@ brand képet betennia fejlécbe?
 
 
 
-
+<!--[#assign link =damfpfn.getVariationUrl(${myAsset},100,100)]-->
 
 
 

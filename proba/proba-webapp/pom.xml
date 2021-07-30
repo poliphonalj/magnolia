@@ -11,15 +11,13 @@
   <groupId>gui-guidance</groupId>
   <artifactId>proba-webapp</artifactId>
   <name>proba: webapp</name>
-  <packaging>war</packaging>
+
   
   
   
   
   
-  
-  
- 
+
   
   
   
@@ -41,8 +39,9 @@
     <!-- option i - magnolia-empty-webapp -->
     <!-- Dependencies versions are already imported by parent pom. Requires "Option A" in the parent pom. -->
     
-  
-		<dependency>
+    
+
+	<dependency>
 			<groupId>info.magnolia.imaging</groupId>
 			<artifactId>magnolia-imaging</artifactId>
 		</dependency>
@@ -129,13 +128,64 @@
 	
 	
 	
+		<dependency>
+  <groupId>info.magnolia.site</groupId>
+  <artifactId>magnolia-site</artifactId>
+
+</dependency>
 	
 	
 	
+	<dependency>
+		<groupId>info.magnolia.templating</groupId>
+		<artifactId>magnolia-templating-essentials-models</artifactId>
+	</dependency>
 	
-	
-	
-	
+	<dependency>
+  <groupId>info.magnolia</groupId>
+  <artifactId>magnolia-module-imaging</artifactId>
+ 
+</dependency>
+
+
+
+
+<!-- To install the focal areas module -->
+<dependency>
+    <groupId>info.magnolia.dam</groupId>
+    <artifactId>magnolia-dam-focal-area</artifactId>
+
+</dependency>
+ 
+<!-- To install the focal point module -->
+<dependency>
+    <groupId>info.magnolia.dam</groupId>
+    <artifactId>magnolia-dam-focal-point</artifactId>
+
+</dependency>
+ 
+<!-- To install the focal hotspot module -->
+<dependency>
+    <groupId>info.magnolia.dam</groupId>
+    <artifactId>magnolia-dam-focal-hotspot</artifactId>
+
+</dependency>
+ 
+<!-- To install the samples module -->
+<dependency>
+    <groupId>info.magnolia.dam</groupId>
+    <artifactId>magnolia-dam-focal-samples</artifactId>
+
+</dependency>
+
+
+
+
+
+
+
+
+
 
 
     <!-- option ii - magnolia-community-webapp -->
@@ -156,7 +206,7 @@
 
     <!-- option iii - magnolia-dx-core-webapp -->
     <!-- Dependencies versions are already imported by parent pom. Requires "Option B" in the parent pom. -->
-    <!--
+    
     <dependency>
       <groupId>info.magnolia.dx</groupId>
       <artifactId>magnolia-dx-core-webapp</artifactId>
@@ -167,7 +217,7 @@
       <artifactId>magnolia-dx-core-webapp</artifactId>
       <type>pom</type>
     </dependency>
-    -->
+
 
 	</dependencies>
 

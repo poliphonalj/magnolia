@@ -1,16 +1,46 @@
-
-imaging:
-  class: info.magnolia.templating.imaging.VariationAwareImagingSupport
-  variations:
-   
-      "100":
-         class: info.magnolia.templating.imaging.variation.SimpleResizeVariation
-         width: 100
-      "200":
-         class: info.magnolia.templating.imaging.variation.SimpleResizeVariation
-         width: 200
 cssFiles:
   #CSS file configuration
 jsFiles:
   #JavaScript file configuration
-   
+imaging:
+  class: info.magnolia.templating.imaging.VariationAwareImagingSupport
+  variations:
+    "1600":
+      class: info.magnolia.templating.imaging.variation.SimpleResizeVariation
+      width: 1600
+    "1366":
+      class: info.magnolia.templating.imaging.variation.SimpleResizeVariation
+      width: 1366
+    #......
+    "240":
+      class: info.magnolia.templating.imaging.variation.SimpleResizeVariation
+      width: 240
+    
+    "40":
+      class: info.magnolia.templating.imaging.variation.SimpleResizeVariation
+      width: 40
+ 
+
+    "1600x1200":
+      class: info.magnolia.templating.imaging.variation.SimpleResizeVariation
+      height: 1200
+      width: 1600
+    "1366x1024":
+      class: info.magnolia.templating.imaging.variation.SimpleResizeVariation
+      height: 1024
+      width: 1366
+
+    "kicsi":
+      class: info.magnolia.templating.imaging.variation.SimpleResizeVariation
+      height: 100
+      width: 100
+
+    "fura":
+      class: info.magnolia.templating.imaging.variation.SimpleResizeVariation
+      height: 400
+      width: 100
+
+    "csik":
+      class: info.magnolia.templating.imaging.variation.SimpleResizeVariation
+      height: 100
+      width: 500

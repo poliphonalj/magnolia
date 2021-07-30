@@ -133,25 +133,17 @@ a-menu:hover {
   background-color: pink;
   color: white;
 }  
-  
-  
+
   </style>
 
-   
-   
-   
-   
-   
    [@cms.page /]
    
-	
  </head>
-  
-  
+
 <body>
  
  
-  <!-- header-->
+<!-- header-->
 <div >
  	[@cms.area name="header"/]
 </div>	

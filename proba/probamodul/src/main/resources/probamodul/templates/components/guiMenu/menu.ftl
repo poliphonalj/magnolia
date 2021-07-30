@@ -4,8 +4,8 @@
 		<div class="container-fluid" >
 			<!-- Brand and toggle get grouped for better mobile display -->
 			<div class="navbar-header">
-							<!-- <a class="navbar-brand" href="#">
-							<img src="${damfn.getAssetLink("jcr:90180d68-8662-4198-8f6c-fa3fad673e6d")}"/></a>	-->
+							
+						
 
 				<button type="button"  class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"  style="background-color: pink ;">
 					<span class="sr-only">Toggle navigation</span>

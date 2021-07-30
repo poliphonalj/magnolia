@@ -12,7 +12,7 @@
 
 
 	<artifactId>probamodul</artifactId>
-	<packaging>jar</packaging>
+<!-- 	<packaging>jar</packaging> -->
 	<name>probamodul Magnolia Module</name>
 
   
@@ -214,8 +214,47 @@
 </dependency>
 
  
+	<dependency>
+  <groupId>info.magnolia.site</groupId>
+  <artifactId>magnolia-site</artifactId>
+
+</dependency>
+
+<dependency>
+  <groupId>info.magnolia</groupId>
+  <artifactId>magnolia-module-imaging</artifactId>
+
+</dependency>
 
 
+
+<!-- To install the focal areas module -->
+<dependency>
+    <groupId>info.magnolia.dam</groupId>
+    <artifactId>magnolia-dam-focal-area</artifactId>
+
+</dependency>
+ 
+<!-- To install the focal point module -->
+<dependency>
+    <groupId>info.magnolia.dam</groupId>
+    <artifactId>magnolia-dam-focal-point</artifactId>
+
+</dependency>
+ 
+<!-- To install the focal hotspot module -->
+<dependency>
+    <groupId>info.magnolia.dam</groupId>
+    <artifactId>magnolia-dam-focal-hotspot</artifactId>
+
+</dependency>
+ 
+<!-- To install the samples module -->
+<dependency>
+    <groupId>info.magnolia.dam</groupId>
+    <artifactId>magnolia-dam-focal-samples</artifactId>
+
+</dependency>
 
 
 
@@ -263,8 +302,8 @@
 		</repository>
 		<!-- IF YOU NEED MODULES FROM THE ENTERPRISE VERSION, UNCOMMENT THE FOLLOWING 
 			REPOSITORY -->
-		<!-- <repository> <id>magnolia.enterprise.releases</id> <url>https://nexus.magnolia-cms.com/content/repositories/magnolia.enterprise.releases</url> 
-			<snapshots> <enabled>false</enabled> </snapshots> </repository> -->
+		<repository> <id>magnolia.enterprise.releases</id> <url>https://nexus.magnolia-cms.com/content/repositories/magnolia.enterprise.releases</url> 
+			<snapshots> <enabled>false</enabled> </snapshots> </repository> 
 		<repository>
 			<id>vaadin-addons</id>
 			<url>https://maven.vaadin.com/vaadin-addons</url>

@@ -5,7 +5,7 @@ form:
     label: image4Resize
     fields:
 
-        - name: image4Resize
+        - name: image5Resize
           label: ide jön a méretezni való kep
           class: info.magnolia.ui.form.field.definition.BasicUploadFieldDefinition
           binaryNodeName: myNode
@@ -13,15 +13,24 @@ form:
 
 # DAM ból
           
-        - name: image5Resize
+#        - name: image
+#          $type: damLinkField
+
+
+        - name: imageLogo
           class: info.magnolia.ui.form.field.definition.LinkFieldDefinition
-          label: ide jön a méretezni való kep
+          label: ide jön a céges logo
           targetWorkspace: dam
           appName: assets
           identifierToPathConverter:
             class:info.magnolia.dam.app.assets.field.translator.AssetCompositeIdKeyTranslator
           contentPreviewDefinition:
             contentPreviewClass: info.magnolia.dam.app.ui.field.DamFilePreviewComponent
+
+
+
+
+
 
 actions:  
   commit:
