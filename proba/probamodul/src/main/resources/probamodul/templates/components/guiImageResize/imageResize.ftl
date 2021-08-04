@@ -31,11 +31,11 @@ ${content}
 	</tr>	
 
 	<tr>
-		<td>változtatott méret2(variation "fura",400x100 )</td>	<td><img src="${damfn.getAssetLink(img!,"fura")}" alt="logo" ></td>
+		<td>változtatott méret2(variation "fura",100x400 )</td>	<td><img src="${damfn.getAssetLink(img!,"fura")}" alt="logo" ></td>
 	</tr>	
 
 <tr>
-		<td>változtatott méret3(variation "csik",100x500 )</td>	<td><img src="${damfn.getAssetLink(img!,"csik")}" alt="logo" ></td>
+		<td>változtatott méret3(variation "csik",500x100)</td>	<td><img src="${damfn.getAssetLink(img!,"csik")}" alt="logo" ></td>
 	</tr>	
 
 
@@ -46,11 +46,61 @@ ${content}
 ${content}
 ${ctx}
 
-[#assign m = cmsfn.contentByPath("/retro.jpg", "dam")]
+
+
+<br><br><br>
+a DAM Focal használata a fókuszpont a bal alsó csatornára téve
+<table>
+	<tr>
+		<td>eredeti méret (600x466)</td>	<td><img src="/proba-webapp/.imaging/focalpoint/600x466/dam/jcr:3384dbf5-7dde-4b4c-bf62-e399128cd4fc/retro.jpg"></td>
+	</tr>	
+
+	<tr>
+		<td> 700x30</td>	<td><img src="/proba-webapp/.imaging/focalpoint/700x30/dam/jcr:3384dbf5-7dde-4b4c-bf62-e399128cd4fc/retro.jpg"></td>
+	</tr>	
+
+	<tr>
+		<td>50x70</td>	<td><img src="/proba-webapp/.imaging/focalpoint/50x70/dam/jcr:3384dbf5-7dde-4b4c-bf62-e399128cd4fc/retro.jpg"></td>
+	</tr>	
+	
+	
+	<tr>
+		<td>200x400</td>	<td><img src="/proba-webapp/.imaging/focalpoint/200x400/dam/jcr:3384dbf5-7dde-4b4c-bf62-e399128cd4fc/retro.jpg"></td>
+	</tr>
+	
+	<tr>
+		<td>400x200</td>	<td><img src="/proba-webapp/.imaging/focalpoint/400x200/dam/jcr:3384dbf5-7dde-4b4c-bf62-e399128cd4fc/retro.jpg"></td>
+	</tr>
+		
+
+	<tr>
+		<td>1600x1600</td>	<td><img src="/proba-webapp/.imaging/focalpoint/1600x1600/dam/jcr:3384dbf5-7dde-4b4c-bf62-e399128cd4fc/retro.jpg"></td>
+	</tr>	
+
+	<tr>
+		<td>100x400</td>	<td><img src="/proba-webapp/.imaging/focalpoint/100x400/dam/jcr:3384dbf5-7dde-4b4c-bf62-e399128cd4fc/retro.jpg"></td>
+	</tr>	
+
+	<tr>
+		<td>500x100</td>	<td><img src="/proba-webapp/.imaging/focalpoint/500x100/dam/jcr:3384dbf5-7dde-4b4c-bf62-e399128cd4fc/retro.jpg"></td>
+	</tr>	
+
+</table>
+<br><br><br><br>
+
+animalt gifek esetn nem mukodi, mindig az eredeti meretet adja visssza:
+<table>
+	<tr>
+		<td>eredeti méret (280x280)</td>	<td><img src="/proba-webapp/.imaging/focalpoint/280x280/dam/jcr:263fb066-4453-4486-8649-57a1248cc7c8/uTM.gif"></td>
+	</tr>	
+
+	<tr>
+		<td> 700x300</td>	<td><img src="/proba-webapp/.imaging/focalpoint/100x100/dam/jcr:263fb066-4453-4486-8649-57a1248cc7c8/uTM.gif"></td>
+	</tr>	
 
 
 
+</table>
 
-hiiiii${m}
 
 </div>
