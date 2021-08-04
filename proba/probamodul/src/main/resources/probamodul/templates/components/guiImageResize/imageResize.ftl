@@ -88,7 +88,7 @@ a DAM Focal használata a fókuszpont a bal alsó csatornára téve
 </table>
 <br><br><br><br>
 
-animalt gifek esetn nem mukodi, mindig az eredeti meretet adja visssza:
+animalt gifek esetn nem mukodik, mindig az eredeti meretet adja visssza:
 <table>
 	<tr>
 		<td>eredeti méret (280x280)</td>	<td><img src="/proba-webapp/.imaging/focalpoint/280x280/dam/jcr:263fb066-4453-4486-8649-57a1248cc7c8/uTM.gif"></td>
@@ -97,7 +97,14 @@ animalt gifek esetn nem mukodi, mindig az eredeti meretet adja visssza:
 	<tr>
 		<td> 700x300</td>	<td><img src="/proba-webapp/.imaging/focalpoint/100x100/dam/jcr:263fb066-4453-4486-8649-57a1248cc7c8/uTM.gif"></td>
 	</tr>	
+</table>
 
+<br><br><br><br>
+
+<table>
+	<tr>
+		<td>eredeti méret (386x769)</td>	<td><img src="/proba-webapp/.imaging/focalarea/PhonePortrait/388x766/dam/jcr:c20597b1-9168-4a1f-b180-f8485084b92c/cf48c78ed212b647544397254fb28ece.jpg"></td>
+	</tr>	
 
 
 </table>
